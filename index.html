@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUSOG Youth Organization | Online Solicitation</title>
+    <style>
+        /* CSS for Design */
+        :root {
+            --primary-blue: #007dfe; /* GCash Official Blue */
+            --dark-text: #2c3e50;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .solicitation-card {
+            background: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            width: 100px; /* Adjust based on your logo shape */
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 22px;
+            color: var(--primary-blue);
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .letter-body {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #444;
+            text-align: justify;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fdfdfd;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .donation-box {
+            text-align: center;
+            padding: 25px;
+            background: #f0f7ff;
+            border-radius: 15px;
+            border: 2px dashed var(--primary-blue);
+        }
+
+        .donation-box h3 {
+            margin-top: 0;
+            color: var(--dark-text);
+        }
+
+        .gcash-button {
+            background-color: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 125, 254, 0.3);
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .gcash-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 125, 254, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #999;
+        }
+
+        /* Mobile optimization */
+        @media (max-width: 480px) {
+            .solicitation-card { padding: 20px; }
+            .header h1 { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="solicitation-card">
+    <div class="header">
+        <img src="https://scontent.fwnp1-1.fna.fbcdn.net/v/t39.30808-6/439849502_122110580402278495_4457320720162294348_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=QgweASBvciIQ7kNvwFH9Yqu&_nc_oc=Adq1Swxze_W_f47NJucPHY8Z27HhTWW14xh9R15IELRMdxmk1XwAQIVxc2iOJOd7TGY&_nc_zt=23&_nc_ht=scontent.fwnp1-1.fna&_nc_gid=nTnUwuc1JXGSMymnZh1GTg&_nc_ss=7b2a8&oh=00_Af0zG1MtItGdwqgrtKb9xaZceRi7UKFM3N_0GwJ0SMyo9Q&oe=69F8BFB4" alt="PUSOG Logo">
+        <h1>PUSOG YOUTH ORGANIZATION</h1>
+    </div>
+
+    <div class="letter-body">
+        <p><strong>Bagtakan Street</strong> (Zone 6,) Santa Clara</p>  							
+<strong>Marhay na aldaw po!</strong>
+<p>Bilang pagselebrar kan bulan nin Mayo, an satuyang hubenes maugmang naghahanda para sa satuyang taunang Santacruzan na gaganapin sa masunod na DATE?,
+An aktibidad na ini saro sa mga pinakamagayon na tradisyon na nagpapahiling kan satuyang pagtoo asin pagkasararo. Sa huli kaini, kami mapakumbabang minadulok saindo para sa dikit na tabang o donasyon para sa para sa ka gamitan kan pag gibo nin arko kan pa basa ag ibang gastuson.
+An saindong suporta, dakulang tabang tanganing maging mapanggana asin maugma an selebrasyon na ini. An gabos na makolekta gagamiton mi po nin tapat para sa ikagaganda kan satuyang <strong>Santacruzan</strong>
+Dakul na salamat po sa saindong pagkaugma-puso. Pagpalain kamo kan Kagurangnan!
+An saindong lingkod,
+</p>
+    </div>
+
+    <div class="donation-box">
+        <h3>Support Our Cause</h3>
+        <p>Scan or click the button below to donate via <strong>GCash</strong></p>
+        <button class="gcash-button" onclick="openGcash()">
+            DONATE VIA GCASH
+        </button>
+    </div>
+
+    <div class="footer">
+        &copy; 2024-2026 PUSOG Youth Organization. All rights reserved.
+    </div>
+</div>
+
+<script>
+    /* JavaScript for Interaction */
+    function openGcash() {
+        // REPLACE THE URL BELOW with your GCash Me Link or a link to your QR Code image
+        const gcashLink = "https://www.gcash.com/"; 
+        
+        // Brief message to the user
+        alert("Redirecting to GCash... Thank you for your support!");
+        
+        // Opens the link in a new tab
+        window.open(gcashLink, "_blank");
+    }
+</script>
+
+</body>
+</html>
